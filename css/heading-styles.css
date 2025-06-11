@@ -1,0 +1,40 @@
+.heading-section h2.mb-4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #4a6bff, #38b6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 10px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.heading-section h2.mb-4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, #4a6bff, #38b6ff);
+}
+
+.big {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1) !important;
+  text-shadow: none;
+  z-index: -1;
+}
+
+.big-2 {
+  font-size: 7vw;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
