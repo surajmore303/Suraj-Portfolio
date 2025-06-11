@@ -1,0 +1,48 @@
+/* Contact Section Text Color Fixes */
+
+/* Make contact info text white for better visibility */
+.contact-section .box h3,
+.contact-section .box p,
+.contact-section .box a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section .box a:hover {
+  color: #38b6ff !important;
+  text-decoration: none;
+}
+
+/* Enhance contrast for contact form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3,
+.contact-form label {
+  color: #333;
+}
+
+/* Improve glassmorphism effect for contact cards */
+.contact-section .glass-effect {
+  background: rgba(74, 107, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-section .glass-effect:hover {
+  background: rgba(74, 107, 255, 0.3);
+}
+
+/* Enhance icon visibility */
+.contact-section .icon {
+  background: linear-gradient(135deg, #4a6bff, #38b6ff);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

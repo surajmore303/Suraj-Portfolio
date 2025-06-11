@@ -1,0 +1,35 @@
+#about-section {
+  background-color: #1a1a2e;
+}
+
+#about-section h1, 
+#about-section h2, 
+#about-section p, 
+#about-section span, 
+#about-section li {
+  color: #ffffff !important;
+}
+
+.about-info li {
+  color: #ffffff !important;
+}
+
+.about-info li span:first-child {
+  color: #38b6ff !important;
+  font-weight: 600;
+}
+
+.about-info li span:last-child {
+  color: #ffffff !important;
+}
+
+.counter-wrap .text p {
+  color: #ffffff !important;
+}
+
+.counter-wrap .text .number {
+  background: linear-gradient(135deg, #4a6bff, #38b6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

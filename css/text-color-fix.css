@@ -1,0 +1,57 @@
+/* Change all black text to white */
+body, p, h1, h2, h3, h4, h5, h6, span, a, li, .text, .form-control::placeholder {
+  color: #ffffff !important;
+}
+
+/* Ensure text is visible against backgrounds */
+body {
+  background-color: #1a1a2e;
+}
+
+/* Fix form text color */
+.form-control {
+  color: #333 !important;
+}
+
+/* Add text shadow for better readability */
+p, h1, h2, h3, h4, h5, h6, span, a, li {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure links are still visible */
+a:hover {
+  color: #38b6ff !important;
+}
+
+/* About section specific styles */
+#about-section h1, 
+#about-section h2, 
+#about-section p, 
+#about-section span, 
+#about-section li {
+  color: #ffffff !important;
+}
+
+.about-info li {
+  color: #ffffff !important;
+}
+
+.about-info li span:first-child {
+  color: #38b6ff !important;
+  font-weight: 600;
+}
+
+.about-info li span:last-child {
+  color: #ffffff !important;
+}
+
+.counter-wrap .text p {
+  color: #ffffff !important;
+}
+
+.counter-wrap .text .number {
+  background: linear-gradient(135deg, #4a6bff, #38b6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

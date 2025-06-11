@@ -1,0 +1,267 @@
+/* Modern UI Styling for Portfolio - Enhanced Glassmorphism & Gradients */
+
+:root {
+  --primary-color: #4a6bff;
+  --secondary-color: #38b6ff;
+  --accent-color: #5271ff;
+  --text-color: #333;
+  --light-text: #f8f9fa;
+  --dark-bg: #1a1a2e;
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --gradient-primary: linear-gradient(135deg, #4a6bff, #38b6ff);
+  --gradient-secondary: linear-gradient(135deg, #6a11cb, #2575fc);
+  --box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+}
+
+/* Typography Improvements */
+body {
+  font-family: var(--font-primary);
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Enhanced Glassmorphism Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.glass-effect:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 40px rgba(31, 38, 135, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Card 3D Effect */
+.card-3d {
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(74, 107, 255, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #38b6ff, #4a6bff);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 107, 255, 0.5);
+}
+
+/* Glow Effect for Buttons */
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.glow-effect:hover:after {
+  opacity: 0.4;
+  filter: blur(15px);
+  transform: scale(1.1);
+}
+
+/* Form Styling */
+.form-control {
+  border-radius: 8px;
+  padding: 12px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.25);
+  border-color: var(--primary-color);
+}
+
+/* Icon Styling */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
+  transition: var(--transition);
+}
+
+.icon:hover {
+  transform: translateY(-5px) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(74, 107, 255, 0.4);
+}
+
+/* Counter Section Styling */
+.counter-wrap .block-18 {
+  padding: 30px 20px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.counter-wrap .block-18:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.counter-wrap .text .number {
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.counter-wrap .text span {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Hire Me Section */
+.ftco-hireme {
+  position: relative;
+  overflow: hidden;
+}
+
+.ftco-hireme:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 46, 0.7);
+  z-index: 0;
+}
+
+.ftco-hireme .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ftco-hireme h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ftco-hireme h2 span {
+  color: var(--secondary-color);
+}
+
+/* Contact Section */
+.contact-section .box {
+  height: 100%;
+  transition: var(--transition);
+}
+
+.contact-section .box:hover {
+  transform: translateY(-10px);
+}
+
+.contact-form {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Footer Styling */
+.ftco-footer {
+  background: var(--dark-bg);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 5rem 0 2rem;
+}
+
+.ftco-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition);
+}
+
+.ftco-footer a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.ftco-footer .ftco-heading-2 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.ftco-footer .ftco-heading-2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--gradient-primary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .counter-wrap .text .number {
+    font-size: 2.5rem;
+  }
+  
+  .ftco-hireme h2 {
+    font-size: 2rem;
+  }
+}
